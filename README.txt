@@ -5,4 +5,4 @@
 ######################################################################
 
 
-This driver has been written for Microchip XC16 compiler with PIC24FJ256GB106 and Densitron 6" RipDraw touch screen 84-0179-000T
+This driver has been written for Microchip XC16 compiler with PIC24FJ256GB106 and Densitron 7" RipDraw touch screen 84-0179-000T
