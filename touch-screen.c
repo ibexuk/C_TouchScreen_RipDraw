@@ -1352,6 +1352,8 @@ void process_touch_screen_comms (void)
 						length |= ((uint16_t)(*p_buffer++) << 8);
 
 						//Label[]
+						for (count = 0; count < TS_TOUCH_LABEL_BUFFER_MAX_LENGTH; count++)
+							ts_touch_label_buffer[count] = 0;
 						for (count = 0; count < length; count++)
 						{
 							if (p_buffer >=  & ts_tx_rx_buffer[TS_BUFFER_LENGTH])
@@ -1362,8 +1364,6 @@ void process_touch_screen_comms (void)
 							p_buffer++;
 							touch_event_received = 1;
 						}
-						if (count < TS_TOUCH_LABEL_BUFFER_MAX_LENGTH)
-							ts_touch_label_buffer[count] = 0x00;
 						
 
 
